@@ -4,8 +4,241 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
-      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.bunny.net" />
+      <link
+         href="https://fonts.bunny.net/css?family=lato:300i,400,700|oxygen:400,700"
+         rel="stylesheet"
+      />
+      <title>Weather-app</title>
       <script src="app.js" defer></script>
    </head>
-   <body></body>
+   <body>
+      <div class="main-container">
+         <div class="flex-column" id="current-place-datas">
+            <p id="today-date">14 Juin 15:00</p>
+            <div id="current-location" class="flex-row">
+               <img
+                  src="/assets/Icones/icon-park-solid_local-two.svg"
+                  width="25"
+                  height="25"
+                  alt=""
+               />Paris
+            </div>
+            <p id="current-country">France</p>
+         </div>
+         <div class="flex-row" id="current-weather">
+            <div id="current-temp">16°</div>
+            <div id="current-temp-icon">
+               <img
+                  src="/assets/Icones/icone_ averses.svg"
+                  alt=""
+                  width="98"
+                  height="80"
+               />
+            </div>
+         </div>
+         <div class="flex-row" id="local-conditions">
+            <div>
+               <div class="flex-row">
+                  <img src="/assets/Icones/ri_umbrella-fill.svg" alt="" />
+               </div>
+               <div class="standard-numbers">65%</div>
+            </div>
+            <div class="flex-row">
+               <div><img src="/assets/Icones/ph_wind.png" alt="" /></div>
+               <div class="standard-numbers">12km/h</div>
+            </div>
+            <div class="flex-row">
+               <div><img src="/assets//Icones/min-temp.svg" alt="" /></div>
+               <div class="standard-numbers">9°</div>
+            </div>
+            <div class="flex-row">
+               <div><img src="/assets/Icones/max-temp.svg" alt="" /></div>
+               <div class="standard-numbers">29°</div>
+            </div>
+         </div>
+         <hr />
+         <div id="local-previsions" class="flex-row">
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">16:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">15°</div>
+            </div>
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">17:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">14°</div>
+            </div>
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">18:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">14°</div>
+            </div>
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">19:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">12°</div>
+            </div>
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">20:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">11°</div>
+            </div>
+            <div class="flex-column daily-previsions">
+               <div class="standard-numbers">21:00</div>
+               <div>
+                  <img
+                     src="/assets/Icones/small-rainy-icon.svg"
+                     width="25"
+                     height="20"
+                     alt=""
+                  />
+               </div>
+               <div class="standard-numbers">10°</div>
+            </div>
+         </div>
+         <hr />
+         <div class="flex-row">
+            <div id="next-days-previsions">
+               <div class="flex-row">
+                  <div>Demain</div>
+                  <div>
+                     <img
+                        src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
+                        width="25"
+                        height="25"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-numbers">10°/19°</div>
+               </div>
+               <div class="flex-row">
+                  <div>Vendredi</div>
+                  <div>
+                     <img
+                        src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
+                        width="25"
+                        height="25"
+                        alt=""
+                     />
+                  </div>
+                  <div>class="standard-numbers"10°/19°</div>
+               </div>
+               <div class="flex-row">
+                  <div>Samedi</div>
+                  <div>
+                     <img
+                        src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
+                        width="25"
+                        height="25"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-numbers">12°/29°</div>
+               </div>
+            </div>
+         </div>
+         <hr />
+         <div class="flex-row">
+            <div class="flex-row">
+               <div class="flex-rox">
+                  <div>Wikipedia</div>
+               </div>
+               <div class="flex-rox">
+                  <img
+                     src="/assets/Icones/arcticons_wiki-unblocked.svg"
+                     alt=""
+                     width="25"
+                     height="25"
+                  />
+               </div>
+            </div>
+            <div class="flex-row">
+               <div>Google</div>
+               <div>
+                  <img
+                     src="/assets/Icones/arcticons_google-maps-alt.svg"
+                     alt=""
+                     width="25"
+                     height="25"
+                  />
+               </div>
+            </div>
+            <div class="flex-column">
+               <div>
+                  <p>
+                     Paris est la capitale de la France. Divisée en vingt
+                     arrondissements, elle est le chef-lieu de la région
+                     Île-de-France et le siège de la métropole du Grand Paris...
+                  </p>
+               </div>
+               <div>
+                  <button>Lire la suite...</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="flex-row" id="menu-bar">
+            <div class="flex-column" id="menu-left">
+               <div>
+                  <img
+                     src="/assets/Icones/ic_round-star.svg"
+                     alt=""
+                     width="25"
+                     height="25"
+                  />
+               </div>
+               <div>Mes Favoris</div>
+            </div>
+            <div class="flex-column" id="menu-right">
+               <div>
+                  <img
+                     src="/assets/Icones/gis_search-poi.svg"
+                     alt=""
+                     width="25"
+                     height="25"
+                  />
+               </div>
+               <div>Rechercher</div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
