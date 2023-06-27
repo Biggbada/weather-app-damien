@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.bunny.net" />
+      <link
+         href="https://fonts.bunny.net/css?family=lato:300,400,700|oxygen:400,700"
+         rel="stylesheet"
+      />
+      <title>Weather-app</title>
+      <script src="app.js" defer></script>
+   </head>
+
+   <body>
+      <div class="search-main-container flex-column">
+         <div class="flex-row search-bar">
+            <form action="" method="post">
+               <div class="flex-row">
+                  <input
+                     name="city-search"
+                     type="text"
+                     placeholder="Rechercher une ville"
+                  />
+               </div>
+               <div class="flex-row">
+                  <input name="city-search" type="submit" />
+               </div>
+            </form>
+         </div>
+         <div class="flex-column">
+            <div id="search-intro" class="standard-texts">
+               Recherche par météo
+            </div>
+            <div class="flex-row meteo-search">
+               <div class="flex-column">
+                  <div class="meteo-icons-containers">
+                     <img
+                        src="/assets/Icones/soleil-30.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-texts">Soleil</div>
+               </div>
+               <div class="flex-column">
+                  <div class="meteo-icons-containers active">
+                     <img
+                        src="/assets/Icones/moon-30.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-texts">Nuit</div>
+               </div>
+               <div class="flex-column">
+                  <div class="meteo-icons-containers">
+                     <img
+                        src="/assets/Icones/stormy.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-texts">Orage</div>
+               </div>
+               <div class="flex-column">
+                  <div class="meteo-icons-containers">
+                     <img
+                        src="/assets/Icones/rainy.svg"
+                        height="30"
+                        width="30"
+                        alt=""
+                     />
+                  </div>
+                  <div class="standard-texts">Neige</div>
+               </div>
+            </div>
+         </div>
+         <hr />
+         <div class="flex-row" id="cards-container">
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+            <div class="flex-column cards-container">
+               <div class="flex-row">
+                  <div class="flex-column"></div>
+                  <div class="flex-column"></div>
+                  <div class=""></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
