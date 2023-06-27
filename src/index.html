@@ -19,12 +19,23 @@
             <div class="flex-column" id="current-place-datas">
                <p id="today-date">14 Juin 15:00</p>
                <div id="current-location" class="flex-row">
-                  <img
-                     src="/assets/Icones/icon-park-solid_local-two.svg"
-                     width="25"
-                     height="25"
-                     alt=""
-                  />Paris
+                  <div class="flex-row">
+                     <img
+                        src="/assets/Icones/icon-park-solid_local-two.svg"
+                        width="25"
+                        height="25"
+                        alt=""
+                     />
+                  </div>
+                  <div class="flex-row" id="local-position">Paris</div>
+                  <div class="flex-row">
+                     <img
+                        src="/assets/Icones/ic_round-star-yellow.svg"
+                        width="25"
+                        height="25"
+                        alt=""
+                     />
+                  </div>
                </div>
                <p id="current-country">France</p>
             </div>
@@ -138,7 +149,7 @@
             <div class="flex-row">
                <div id="next-days-previsions">
                   <div class="flex-row gap3">
-                     <div>Demain</div>
+                     <div class="standard-texts">Demain</div>
                      <div>
                         <img
                            src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
@@ -150,7 +161,7 @@
                      <div class="standard-numbers">10°/19°</div>
                   </div>
                   <div class="flex-row pad3 gap3">
-                     <div>Vendredi</div>
+                     <div class="standard-texts">Vendredi</div>
                      <div>
                         <img
                            src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
@@ -162,7 +173,7 @@
                      <div class="standard-numbers">10°/19°</div>
                   </div>
                   <div class="flex-row gap3">
-                     <div>Samedi</div>
+                     <div class="standard-texts">Samedi</div>
                      <div>
                         <img
                            src="/assets/Icones/icone_soleil_tres_nuageux-v2.svg"
@@ -176,10 +187,10 @@
                </div>
             </div>
             <hr />
-            <div class="flex-row">
-               <div class="flex-row">
-                  <div class="flex-row thumb">
-                     <div>Wikipedia</div>
+            <div class="flex-row" id="wiki-google-container">
+               <div class="flex-row thumb">
+                  <div class="flex-row">
+                     <div class="thumb-name standard-texts">Wikipedia</div>
                      <div class="flex-row">
                         <img
                            src="/assets/Icones/arcticons_wiki-unblocked.svg"
@@ -191,7 +202,7 @@
                   </div>
                </div>
                <div class="flex-row thumb">
-                  <div>Google</div>
+                  <div class="thumb-name standard-texts">Google</div>
                   <div>
                      <img
                         src="/assets/Icones/arcticons_google-maps-alt.svg"
@@ -201,7 +212,7 @@
                      />
                   </div>
                </div>
-               <div class="flex-column">
+               <div class="flex-column" id="wiki-google-contents">
                   <div>
                      <p class="wiki-short-description">
                         Paris est la capitale de la France. Divisée en vingt
