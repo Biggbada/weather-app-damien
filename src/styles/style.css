@@ -9,7 +9,7 @@ body {
 }
 .main-container {
    padding-top: 1.7rem;
-   background: url(/assets/Icones/frond_pluie.png);
+   background: url("../assets/Icones/frond_pluie.png");
    background-size: cover;
    box-sizing: border-box;
    border-radius: 30px;
@@ -23,7 +23,7 @@ body {
 }
 header,
 main,
-footer {
+footer .home {
    padding-left: 1.94rem;
    padding-right: 1.94rem;
 }
@@ -263,12 +263,20 @@ footer {
 }
 
 /* search */
-.search-main-container {
+#search-main-container {
+   background: linear-gradient(
+      180deg,
+      rgba(47, 61, 83, 1) 30%,
+      rgba(47, 61, 83, 0.7) 99.79%
+   );
+   padding-top: 3.4rem;
+}
+/* .search-main-container {
    border-radius: 30px;
    border: 5px solid #fffcfc;
    background: linear-gradient(
       180deg,
-      rgba(47, 61, 83, 0.9) 30%,
+      rgba(47, 61, 83, 1) 30%,
       rgba(47, 61, 83, 0.7) 99.79%
    );
    box-shadow: -1px 1px 3px 0px rgba(14, 24, 46, 0.9),
@@ -278,14 +286,45 @@ footer {
       1px -1px 2px 0px rgba(14, 24, 46, 0.5) inset,
       -1px 1px 2px 0px rgba(14, 24, 46, 0.3) inset;
    padding-top: 3.4rem;
-}
+} */
 .search-bar {
    width: 19.4375rem;
-   height: 2.4375rem;
    border-radius: 25px;
    border: 1px solid rgba(255, 255, 255, 0.01);
    background: rgba(255, 255, 255, 0.15);
    backdrop-filter: blur(20px);
+   justify-content: start;
+}
+input[type="text"] {
+   width: 16rem;
+   height: 2.4375rem;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-width: 0;
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(20px);
+}
+input::placeholder {
+   color: #fff;
+   text-align: center;
+   font-size: 0.75rem;
+   font-family: Lato;
+   font-weight: 600;
+}
+label {
+   width: 3rem;
+   height: 2.4375rem;
+   border-radius: 0px 25px 25px 0px;
+   border: 1px solid rgba(255, 255, 255, 0.01);
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(20px);
+}
+input[type="submit"] {
+   display: none;
+}
+.search-button {
+   width: 3rem;
+   height: 2.4375rem;
 }
 .meteo-search {
    gap: 0.625rem;
@@ -306,9 +345,39 @@ footer {
    border: 1px solid var(--glass-select, rgba(255, 255, 255, 0.42));
    background: var(--glass-select, rgba(255, 255, 255, 0.42));
 }
-.cards-container {
+.full-width {
+   width: 100%;
+}
+#main-cards-container {
+   gap: 0.76rem;
+}
+.card-containers {
    border-radius: 25px;
    border: 1px solid rgba(255, 255, 255, 0.01);
    background: rgba(255, 255, 255, 0.15);
    backdrop-filter: blur(20px);
+   width: 9.37rem;
+   padding: 0.53rem;
+   box-sizing: border-box;
+   align-items: start;
+}
+.search-temp-weather {
+   width: 100%;
+   justify-content: space-between;
+   margin-bottom: 0.75rem;
+}
+.results-city-title {
+   font-size: 1rem;
+}
+.search-country-title {
+   font-weight: 300;
+   margin-bottom: 1rem;
+}
+.search-bottom-menu {
+   margin-top: auto;
+   border-radius: 0px 0px 25px 25px;
+   background: rgba(82, 82, 82, 0.6);
+}
+#search-footer-container {
+   height: 3.75rem;
 }

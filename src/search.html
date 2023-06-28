@@ -3,32 +3,47 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="./styles/style.css" />
       <link rel="preconnect" href="https://fonts.bunny.net" />
       <link
          href="https://fonts.bunny.net/css?family=lato:300,400,700|oxygen:400,700"
          rel="stylesheet"
       />
       <title>Weather-app</title>
-      <script src="app.js" defer></script>
+      <script src="./js/app.js" defer></script>
    </head>
 
    <body>
-      <div class="search-main-container flex-column">
-         <div class="flex-row search-bar">
-            <form action="" method="post">
-               <div class="flex-row">
-                  <input
-                     name="city-search"
-                     type="text"
-                     placeholder="Rechercher une ville"
-                  />
-               </div>
-               <div class="flex-row">
-                  <input name="city-search" type="submit" />
-               </div>
-            </form>
+      <div class="main-container" id="search-main-container">
+         <div class="flex-row">
+            <div class="flex-row search-bar">
+               <form action="" method="post">
+                  <div class="flex-row">
+                     <input
+                        name="city-search"
+                        type="text"
+                        placeholder="Rechercher une ville"
+                     />
+
+                     <label for="city-input-submit"
+                        ><div class="flex-row search-button">
+                           <img
+                              src="./assets/Icones/octicon_search-16.svg"
+                              width="25"
+                              height="25"
+                              alt=""
+                           /></div
+                     ></label>
+                     <input
+                        name="city-search"
+                        id="city-input-submit"
+                        type="submit"
+                     />
+                  </div>
+               </form>
+            </div>
          </div>
+
          <div class="flex-column">
             <div id="search-intro" class="standard-texts">
                Recherche par météo
@@ -37,7 +52,7 @@
                <div class="flex-column">
                   <div class="meteo-icons-containers">
                      <img
-                        src="/assets/Icones/soleil-30.svg"
+                        src="./assets/Icones/soleil-30.svg"
                         width="30"
                         height="30"
                         alt=""
@@ -48,7 +63,7 @@
                <div class="flex-column">
                   <div class="meteo-icons-containers active">
                      <img
-                        src="/assets/Icones/moon-30.svg"
+                        src="./assets/Icones/moon-30.svg"
                         width="30"
                         height="30"
                         alt=""
@@ -59,7 +74,7 @@
                <div class="flex-column">
                   <div class="meteo-icons-containers">
                      <img
-                        src="/assets/Icones/stormy.svg"
+                        src="./assets/Icones/stormy.svg"
                         width="30"
                         height="30"
                         alt=""
@@ -70,7 +85,7 @@
                <div class="flex-column">
                   <div class="meteo-icons-containers">
                      <img
-                        src="/assets/Icones/rainy.svg"
+                        src="./assets/Icones/rainy.svg"
                         height="30"
                         width="30"
                         alt=""
@@ -81,50 +96,133 @@
             </div>
          </div>
          <hr />
-         <div class="flex-row" id="cards-container">
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+         <div class="flex-row" id="main-cards-container">
+            <p class="standard-texts full-width">Résultat de ma recherche</p>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
-            <div class="flex-column cards-container">
-               <div class="flex-row">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <div class=""></div>
+            <div class="flex-column card-containers">
+               <div class="flex-row search-temp-weather">
+                  <div class="flex-column">26°</div>
+                  <div class="flex-column">
+                     <img
+                        src="./assets/Icones/icone_ averses.svg"
+                        width="30"
+                        height="30"
+                        alt=""
+                     />
+                  </div>
+               </div>
+               <div class="flex-row standard-texts results-city-title">
+                  Bangkok
+               </div>
+               <div class="flex-row standard-texts search-country-title">
+                  Thaïlande
                </div>
             </div>
          </div>
+         <footer>
+            <div class="flex-column" id="search-footer-container">
+               <img
+                  src="./assets/Icones/icon-park-outline_back.svg"
+                  width="35"
+                  height="35"
+                  alt=""
+               />
+            </div>
+         </footer>
       </div>
    </body>
 </html>
