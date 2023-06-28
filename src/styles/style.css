@@ -2,30 +2,37 @@
    font-family: "Lato", sans-serif;
    font-family: "Oxygen", sans-serif;
    color: white;
-   min-height: 100vw;
+   min-height: 100vh;
 }
 body {
-   margin: auto;
+   margin: 0;
 }
 .main-container {
    padding-top: 1.7rem;
-   background: url("../assets/Icones/frond_pluie.png");
+   background: url("../assets/Images/frond_pluie.jpg");
    background-size: cover;
    box-sizing: border-box;
-   border-radius: 30px;
+   /* border-radius: 30px;
    border: 5px solid #fffcfc;
    box-shadow: -1px 1px 3px 0px rgba(14, 24, 46, 0.9),
       1px -1px 2px 0px rgba(14, 24, 46, 0.9),
       -1px -1px 2px 0px rgba(14, 24, 46, 0.2),
       1px 1px 2px 0px rgba(14, 24, 46, 0.2),
       1px -1px 2px 0px rgba(14, 24, 46, 0.5) inset,
-      -1px 1px 2px 0px rgba(14, 24, 46, 0.3) inset;
+      -1px 1px 2px 0px rgba(14, 24, 46, 0.3) inset; */
+   min-height: 100vh;
 }
 header,
 main,
 footer .home {
    padding-left: 1.94rem;
    padding-right: 1.94rem;
+}
+footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
 }
 .flex-row {
    display: flex;
@@ -198,8 +205,8 @@ footer {
 
 /* favorites */
 .favorites-main-container {
-   border-radius: 30px;
-   border: 5px solid #fffcfc;
+   /* border-radius: 30px;
+   border: 5px solid #fffcfc; */
    background: linear-gradient(
       180deg,
       rgba(47, 61, 83, 0.9) 30%,
@@ -212,6 +219,8 @@ footer {
       1px -1px 2px 0px rgba(14, 24, 46, 0.5) inset,
       -1px 1px 2px 0px rgba(14, 24, 46, 0.3) inset;
    padding-top: 3.4rem;
+   min-height: 100vh;
+   box-sizing: border-box;
 }
 #favorites-title {
    margin-bottom: 1.1rem;
@@ -294,6 +303,7 @@ footer {
    background: rgba(255, 255, 255, 0.15);
    backdrop-filter: blur(20px);
    justify-content: start;
+   margin-bottom: 1.8rem;
 }
 input[type="text"] {
    width: 16rem;
@@ -302,7 +312,6 @@ input[type="text"] {
    border-bottom-left-radius: 25px;
    border-width: 0;
    background: rgba(255, 255, 255, 0.15);
-   backdrop-filter: blur(20px);
 }
 input::placeholder {
    color: #fff;
@@ -327,7 +336,9 @@ input[type="submit"] {
    height: 2.4375rem;
 }
 .meteo-search {
-   gap: 0.625rem;
+   gap: 1.25rem;
+   margin-bottom: 0.56rem;
+   margin-top: 0.56rem;
 }
 
 .meteo-icons-containers {
@@ -349,7 +360,7 @@ input[type="submit"] {
    width: 100%;
 }
 #main-cards-container {
-   gap: 0.76rem;
+   gap: 1.56rem;
 }
 .card-containers {
    border-radius: 25px;
@@ -380,4 +391,5 @@ input[type="submit"] {
 }
 #search-footer-container {
    height: 3.75rem;
+   margin-top: auto;
 }
