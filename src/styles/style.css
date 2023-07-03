@@ -307,6 +307,7 @@ footer {
 }
 input[type="text"] {
    width: 16rem;
+   color: #fff;
    height: 2.4375rem;
    border-top-left-radius: 25px;
    border-bottom-left-radius: 25px;
