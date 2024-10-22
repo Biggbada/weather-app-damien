@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./styles/style.css" />
-      <link rel="preconnect" href="https://fonts.bunny.net" />
-      <link
-         href="https://fonts.bunny.net/css?family=lato:300,400,700|oxygen:400,700"
-         rel="stylesheet"
-      />
-      <title>Weather-app</title>
-      <script src="./js/functions.js" defer></script>
-      <script src="./js/app.js" defer></script>
-   </head>
 
-   <body>
-      <button id="my-button">test</button>
-      <div class="main-container" id="search-main-container">
-         <div class="flex-row">
-            <div class="flex-row search-bar">
-               <form action="" method="post">
-                  <div class="flex-row">
-                     <input
-                        id="city-input"
-                        name="city-search"
-                        type="text"
-                        placeholder="Rechercher une ville"
-                     />
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="./styles/style.css" />
+   <link rel="preconnect" href="https://fonts.bunny.net" />
+   <link href="https://fonts.bunny.net/css?family=lato:300,400,700|oxygen:400,700" rel="stylesheet" />
+   <title>Weather-app</title>
+   <!-- <script src="./js/functions.js" defer></script> -->
+   <script type="module" src="./js/app.js"></script>
+</head>
 
-                     <label id="city-input-submit" for="city-input-submit"
-                        ><div class="flex-row search-button">
-                           <img
-                              src="./assets/Icones/octicon_search-16.svg"
-                              width="25"
-                              height="25"
-                              alt=""
-                           /></div
-                     ></label>
-                     <input name="city-search" type="submit" />
-                  </div>
-               </form>
+<body>
+   <button id="my-button">test</button>
+   <div class="main-container" id="search-main-container">
+      <div class="flex-row">
+         <div class="flex-row search-bar">
+            <form action="" method="post">
+               <div class="flex-row">
+                  <input id="city-input" name="city-search" type="text" placeholder="Rechercher une ville" />
+
+                  <label id="city-input-submit" for="city-input-submit">
+                     <div class="flex-row search-button">
+                        <img src="./assets/Icones/octicon_search-16.svg" width="25" height="25" alt="" />
+                     </div>
+                  </label>
+                  <input name="city-search" type="submit" />
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <div class="flex-column">
+         <div id="search-intro" class="standard-texts">
+            Recherche par météo
+         </div>
+         <div class="flex-row meteo-search">
+            <div class="flex-column by-weather-search" id="sunny-weather">
+               <div class="meteo-icons-containers">
+                  <img src="./assets/Icones/soleil-30.svg" width="30" height="30" alt="" />
+               </div>
+               <div class="standard-texts">Soleil</div>
+            </div>
+            <div class="flex-column by-weather-search" id="night-weather">
+               <div class="meteo-icons-containers active">
+                  <img src="./assets/Icones/moon-30.svg" width="30" height="30" alt="" />
+               </div>
+               <div class="standard-texts">Nuit</div>
+            </div>
+            <div class="flex-column by-weather-search" id="stormy-weather">
+               <div class="meteo-icons-containers">
+                  <img src="./assets/Icones/stormy.svg" width="30" height="30" alt="" />
+               </div>
+               <div class="standard-texts">Orage</div>
+            </div>
+            <div class="flex-column by-weather-search" id="snowy-weather">
+               <div class="meteo-icons-containers">
+                  <img src="./assets/Icones/rainy.svg" height="30" width="30" alt="" />
+               </div>
+               <div class="standard-texts">Neige</div>
             </div>
          </div>
-
-         <div class="flex-column">
-            <div id="search-intro" class="standard-texts">
-               Recherche par météo
-            </div>
-            <div class="flex-row meteo-search">
-               <div class="flex-column by-weather-search" id="sunny-weather">
-                  <div class="meteo-icons-containers">
-                     <img
-                        src="./assets/Icones/soleil-30.svg"
-                        width="30"
-                        height="30"
-                        alt=""
-                     />
-                  </div>
-                  <div class="standard-texts">Soleil</div>
-               </div>
-               <div class="flex-column by-weather-search" id="night-weather">
-                  <div class="meteo-icons-containers active">
-                     <img
-                        src="./assets/Icones/moon-30.svg"
-                        width="30"
-                        height="30"
-                        alt=""
-                     />
-                  </div>
-                  <div class="standard-texts">Nuit</div>
-               </div>
-               <div class="flex-column by-weather-search" id="stormy-weather">
-                  <div class="meteo-icons-containers">
-                     <img
-                        src="./assets/Icones/stormy.svg"
-                        width="30"
-                        height="30"
-                        alt=""
-                     />
-                  </div>
-                  <div class="standard-texts">Orage</div>
-               </div>
-               <div class="flex-column by-weather-search" id="snowy-weather">
-                  <div class="meteo-icons-containers">
-                     <img
-                        src="./assets/Icones/rainy.svg"
-                        height="30"
-                        width="30"
-                        alt=""
-                     />
-                  </div>
-                  <div class="standard-texts">Neige</div>
-               </div>
-            </div>
-         </div>
-         <hr />
-         <div class="flex-row" id="main-cards-container">
-            <p class="standard-texts full-width">Résultat de ma recherche</p>
-            <!-- <div class="flex-column card-containers">
+      </div>
+      <hr />
+      <div class="flex-row" id="main-cards-container">
+         <p class="standard-texts full-width">Résultat de ma recherche</p>
+         <!-- <div class="flex-column card-containers">
                <div class="flex-row search-temp-weather">
                   <div class="flex-column">26°</div>
                   <div class="flex-column">
@@ -215,13 +184,9 @@
       </div>
       <footer>
          <div class="flex-column" id="search-footer-container">
-            <img
-               src="./assets/Icones/icon-park-outline_back.svg"
-               width="35"
-               height="35"
-               alt=""
-            />
+            <img src="./assets/Icones/icon-park-outline_back.svg" width="35" height="35" alt="" />
          </div>
       </footer>
-   </body>
+</body>
+
 </html>

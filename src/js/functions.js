@@ -153,9 +153,9 @@ function createCitiesContainers() {
  * @param {string} properties
  * @returns an html element with properties you want
  */
-function createFullElement(tagName, source, properties) {
+export function createFullElement(tagName, source, properties) {
    const element = document.createElement(tagName);
-   sourceElement = document.querySelector(source);
+   const sourceElement = document.querySelector(source);
    sourceElement.appendChild(element);
 
    for (const property in properties) {

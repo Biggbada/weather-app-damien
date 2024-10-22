@@ -1,4 +1,5 @@
-// import { City } from "./City.js";
+import { City } from "./City.js";
+import { createFullElement } from "./functions.js";
 // import { Weather } from "./Weather.js";
 
 const directGeocodingApiRoot =
@@ -17,7 +18,7 @@ citySearch.value = "dijon";
 
 citySubmit.addEventListener("submit", (event) => {
    event.preventDefault();
-   SearchedCity = new City(citySearch.value);
+   const SearchedCity = new City(citySearch.value);
    console.log(SearchedCity);
 
    const cardContainers = document.querySelectorAll(".card-containers");
